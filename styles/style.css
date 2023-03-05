@@ -1,0 +1,601 @@
+*{
+    padding:0;
+    margin:0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url("/project/Assets/phong-nguyen-td6NzFBcNjU-unsplash.jpg");
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+nav{
+    display:flex;
+    padding:3% 5%;
+    justify-content:space-between;
+    align-items:center;
+}
+nav h3{
+    color:white;
+    font-size:18px;
+    text-transform:uppercase;
+}
+.nav-menu{
+    flex:1;
+    text-align:right;
+}
+.nav-menu ul li{
+    list-style:none;
+    display:inline-block;
+    margin:0px 12px;
+    position:relative;
+}
+.nav-menu ul li a{
+    text-decoration:none;
+    color:white;
+    font:14px;
+    text-transform:uppercase;
+}
+.nav-menu ul li::after{
+    content: '';
+    width: 0px;
+    height: 5px;
+    background:black;
+    display:block;
+    margin: auto;
+    position: absolute;
+    bottom:-5px;
+    transition:.5s;
+}
+.nav-menu ul li:hover::after{
+    width:100%;
+}
+.profile-img{
+    width:30%;
+    position:absolute;
+    top:8%;
+    left: 70%;
+    bottom:0%;
+}
+.title-discription{
+    width:90%;
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+
+}
+.title-discription h1{
+    font-size: 60px;
+}
+.title-discription p{
+    margin:10px 0 40px;
+    font-size:15px;
+}
+.title-discription a{
+    display: inline-block;
+    text-decoration:none;
+    color:#fff;
+    border: 2px solid white;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 13px 30px;
+    font-size: 14px;
+    
+}
+.title-discription a:hover{
+    background:green;
+    border: 2px solid black;
+    transition: 1s;
+}
+nav span{
+    display: none;
+    
+}
+
+/*-------About------*/
+.row{
+    display:flex;
+    margin-top: 5%;
+    justify-content:space-between;
+  
+}
+.about-me{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+    
+
+}
+.about-me h1{
+    text-decoration: underline;
+
+}
+.about-me-col h2{
+    margin-top:4%;
+    margin-bottom:30px;
+    text-align:left;
+    margin-left:50%;
+}
+.about-me-col p{
+    color:#777;
+    font-size:15px;
+    font-weight:300;
+    padding: 0px;
+    line-height:20px;
+    text-align:left;
+    margin-left:50%;
+
+}
+.about-me-col img{
+    width:350%;
+    border-radius:50%;
+}
+
+
+/*------My Skills Section------*/
+.skill{
+    width: 80%;
+    margin:auto;
+    margin-top: 4%;
+    background:#f4afb5;
+    padding-top:100px;
+    margin-bottom: 20px;
+    animation: skill 4s;
+   
+    
+}
+.skill h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.skill-col{
+    flex-basis: 45%;
+    border-radius:10%;
+    margin-bottom:4%;
+}
+.skill-col h2{
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 12px;
+    
+}
+.skill-col p{
+    color:#777777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 12px;
+    text-align: left;
+}
+.skill-col li{
+    list-style: none;
+    margin: 20px 0;
+}
+.skill-col .bar{
+    display: block;
+    height:2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #D4DEF2;
+
+}
+
+
+.skill-col .bar span{
+    height: 3px;
+    float: left;
+    background: rgb(86, 6, 223);
+}
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+.css{
+    width: 65%;
+    animation: css 2s;
+
+}
+
+.jquery{
+    width: 40%;
+    animation: jquery 2s;
+
+}
+
+.javascript{
+    width: 50%;
+    animation: javascript 2s;
+    
+
+}
+/*----My Services----*/
+.my-services{
+    width: 80%;
+    margin: auto;
+    padding-top:100px;
+    text-align: center;
+}
+.my-services h2{
+    text-decoration: underline;
+    margin-top: 5%;
+    font-size: 300;
+}
+.my-services p{
+    margin-top: 1%;
+    color: #777;
+    font-size: 15px;
+
+}
+.services-collum{
+   flex-basis: 30%;
+    background: #f4afb5;
+    padding: 20px 12px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    box-sizing: border-box;
+   
+}
+.services-collum h3{
+    font-weight: 300;
+    margin: 10px;
+}
+.services-collum p{
+    margin-top: 4%;
+    font-weight: 300;
+    color:#777;
+}
+.services-collum:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+/*----my profile----*/
+
+.my-profile{
+    width: 80%;
+    margin: auto;
+    padding-top:100px;
+    text-align: center;
+}
+.my-profile h2{
+    text-decoration: underline;
+    margin-top: 5%;
+    font-size: 300;
+}
+.my-profile p{
+    margin-top: 1%;
+    color: #777;
+    font-size: 15px;
+
+}
+.photo-collum{
+    flex-basis:30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow:hidden ;
+}
+.photo-collum img{
+    width: 100%;
+    display: block;
+}
+
+.over-lay{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    transition: 1s;
+}
+
+.over-lay:hover{
+    background: rgba(225,0,0,0.4);
+}
+.over-lay h3{
+    width: 100%;
+    font-weight: 500;
+    color:white;
+    font-size: 25px;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.over-lay:hover h3{
+    bottom:49%;
+    opacity: 1;
+
+}
+
+/*-----testimonial-----*/
+
+.testimonial{
+    width: 80%;
+    margin: auto;
+    padding-top:100px;
+    text-align: center;
+}
+.testimonial h2{
+    text-decoration: underline;
+    margin-top: 5%;
+    font-size: 300;
+}
+.testimonial p{
+    margin-top: 1%;
+    color: #777;
+    font-size: 15px;
+
+}
+.testimonial-coll{
+    flex-basis:40%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #f4afb5;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-coll img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 25px;
+    border-radius: 50%;
+}
+.testimonial-coll h4{
+    font-size: 20px;
+    margin-top:2%;
+}
+.testimonial-coll p{
+    font-weight:bold;
+}
+.testimonial-coll:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+/*----Follow Us----*/
+.Follow-us{
+    width: 80%;
+    margin: auto;
+    padding-top:100px;
+ 
+}
+.Follow-coll{
+   flex-basis: 100%;
+   border-radius: 10px;
+   padding: 100px;
+   background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('/project/Assets/fruit-salad.webp');
+   color: white;
+   margin-bottom: 25px;
+   text-align: center;
+
+}
+.Follow-coll p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.Follow-coll a{
+    display: inline-block;
+    text-decoration:none;
+    color:#fff;
+    border: 2px solid white;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 13px 30px;
+    font-size: 14px;
+    
+}
+.Follow-coll a:hover{
+    background:green;
+    border: 2px solid black;
+    transition: 1s;
+}
+
+/*----Factor----*/
+.footer{
+    width: 80%;
+    margin: auto;
+    padding-top:100px;
+    text-align: center;
+  
+}
+.footer-collum{
+    padding: 60px;
+    flex-basis: 100%;
+    background: black;
+    margin-bottom: 30px;
+    text-align: left;
+   
+   
+
+   
+}
+.footer-collum h1{
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: underline 2px solid red;
+    color:white;
+    margin-top: 5%;
+    margin-left:10%;
+
+}
+.footer-collum ul{
+    list-style: none;
+    font-size: 15px;
+    padding: 20px;
+    line-height: 20px;
+    font-weight: 300;
+   
+    
+  
+}
+.footer-collum a{
+    text-decoration: none;
+}
+.icon{
+    display: flex;
+  
+   
+}
+.icon li{
+    margin:5px;
+    font-size: 25px;
+}
+.footer-collum li a:hover{
+    color:aquamarine;
+    transition: 1s;
+    background: red;
+    padding: 5px;
+
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+     10%{
+    width: 10%;
+}
+     30%{
+    width: 30%;
+}
+     40%{
+    width: 40%;
+}
+     100%{
+    width: 90%;
+}
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+     100%{
+    width: 80%;
+}
+}
+
+
+@keyframes jquery{
+    0%{
+        width: 0%;
+    }
+     100%{
+    width: 40%;
+}
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+     100%{
+    width: 50%;
+}
+}
+
+/*-----title-----*/
+
+@media(max-width:700px){
+    .title-discription{
+        width:90%;
+        color:white;
+        position:absolute;
+        top:25%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .title-discription h1{
+        font-size: 25px;
+        
+    }
+    nav span{
+        display: block;
+        color:#fff;
+        margin: 10px;
+        font-size:20px;
+        cursor: pointer;
+    }
+    .nav-menu{
+        position:absolute;
+        background: rgba(0,0,0,0.2);
+        height:100vh;
+        width:300px;
+        top:0;
+        right:-300px;
+        text-align:left;
+        z-index: 1;
+        transition: 1s;
+        
+    }
+    .nav-menu ul li{
+        display: block;
+        margin:10px 0;
+    }
+    .nav-menu ul{
+        padding: 20px;
+    }
+    .profile-img{
+        width:60%;
+        position:absolute;
+        top:25%;
+        left: 23%;
+        bottom:0%;
+      
+    
+}
+}
+/*-----aboutme----*/
+
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+    .about-me-col img{
+        width:90%;
+        border-radius:50%;
+    }
+    .about-me-col h2{
+        margin-top:4%;
+        margin-bottom:30px;
+        text-align:left;
+        margin-left:0px;
+        
+    }
+    .about-me-col p{
+        color:#777;
+        font-size:15px;
+        font-weight:300;
+        padding: 0px;
+        line-height:20px;
+        text-align:left;
+        margin-left:20px;
+       
+    
+    }
+
+ /*----skill----*/
+@media(max-width:700px){
+    ul{
+        margin-left: 15px;
+    }
+}
+}
+
+
